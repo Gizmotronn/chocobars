@@ -80,6 +80,20 @@ class PyCalcUi(QMainWindow):
         # Add buttonsLayout to the general layout
         self.generalLayout.addLayout(buttonsLayout)
 
+        # Display text methods
+        def setDisplayText(self, text):
+            """Set display's text."""
+            self.display.setText(text) # set and update the text on the display
+            self.display.setFocus() # set the cursor's focus on the display
+
+        def displayText(self):
+            """Get display's text."""
+            return self.display.text() # returns the current text - to the display after the = sign is clicked
+
+        def clearDisplay(self):
+            """Clear the display."""
+            self.setDisplayText('') # sets the display's text to an empty string
+
 # Client code
 def main():
     """Main function."""
