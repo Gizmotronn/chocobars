@@ -77,6 +77,7 @@ class PyCalcUi(QMainWindow):
             self.buttons[btnText] = QPushButton(btnText)
             self.buttons[btnText].setFixedSize(40, 40) # Every button will have a fixed size of 40x40 pixels
             buttonsLayout.addWidget(self.buttons[btnText], pos[0], pos[1])
+
         # Add buttonsLayout to the general layout
         self.generalLayout.addLayout(buttonsLayout)
 
